@@ -25,7 +25,7 @@ const Footer = () => {
         <div className="flex flex-col items-center">
           <h2 className="text-2xl font-bold mb-1">Connect</h2>
           <p className="mb-1">info@nourishbytes.com</p>
-          <p className="mb-1">+91 7542828409</p>
+          <p className="mb-1">+91 123456789</p>
         </div>
 
         {/* Social Media Icons Section (on the right) */}

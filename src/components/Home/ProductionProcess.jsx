@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaArrowRight } from 'react-icons/fa';
+import { FaArrowRight, FaArrowDown } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 // Sample data for jaggery production steps
@@ -48,11 +48,10 @@ const MakingOfJaggerySection = () => {
         </p>
 
         {/* Production Line Layout */}
-        <div className="flex items-start justify-center">
+        <div className="flex flex-col lg:flex-row items-center justify-center space-y-8 lg:space-y-0 lg:space-x-8 relative">
           {jaggerySteps.map((step, index) => (
-            <div key={step.id} className="flex justify-center items-center">
-             <div className='flex flex-col items-center'>
-             <motion.img
+            <div key={step.id} className="flex flex-col items-center relative">
+              <motion.img
                 src={step.image}
                 alt={step.title}
                 className="mb-4 rounded-lg h-48 w-48 object-cover shadow-md transition-transform transform hover:scale-105"
@@ -63,13 +62,14 @@ const MakingOfJaggerySection = () => {
               />
               <h3 className="text-lg font-bold text-gray-800 mb-2">{step.title}</h3>
               <p className="text-gray-600 text-center mb-4">{step.description}</p>
-            </div>
-              
-              {/* Render line and arrow if it's not the last step */}
+
+              {/* Render arrow if it's not the last step */}
               {index < jaggerySteps.length - 1 && (
-                <div className="flex items-center">
-                  <div className="w-1 h-16 bg-yellow-600 mx-2"></div>
-                  <FaArrowRight className="text-yellow-600 text-2xl" />
+                <div className="flex flex-col lg:flex-row items-center justify-center lg:absolute lg:inset-y-0 lg:right-[-30px]">
+                  {/* Horizontal Arrow on large screens */}
+                  <FaArrowRight className="hidden lg:block text-yellow-600 text-2xl" />
+                  {/* Vertical Arrow on small screens */}
+                  <FaArrowDown className="lg:hidden text-yellow-600 text-2xl mt-4" />
                 </div>
               )}
             </div>
