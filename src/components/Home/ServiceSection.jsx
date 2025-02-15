@@ -32,10 +32,10 @@ const ServiceSection = () => {
   return (
     <section className="bg-gray-50 py-12">
       <div className="w-11/12 max-w-maxContent mx-auto text-center">
-        <h2 className="text-4xl font-bold text-yellow-600 mb-8">
+        <h2 className="text-4xl font-bold text-yellow-900 mb-8">
           What we Offer
         </h2>
-        <p className="mb-12 text-gray-600">
+        <p className="mb-12 text-gray-600 text-lg md:text-xl ">
           We offer a range of services to meet your needs, from bulk orders to custom packaging.
         </p>
         

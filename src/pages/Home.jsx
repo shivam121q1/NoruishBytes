@@ -3,6 +3,7 @@ import LandingPage from '../components/Home/LandingPage'
 import Service from '../components/Home/Service'
 import MakingOfJaggerySection from '../components/Home/ProductionProcess'
 import ServiceSection from '../components/Home/ServiceSection'
+import ProductSection from '../components/Home/ProductSection'
 
 const Home = () => {
   return (
@@ -12,11 +13,10 @@ const Home = () => {
           <Service/>
         </section>
         <section>
-          <MakingOfJaggerySection />
+          {/* <MakingOfJaggerySection /> */}
+          <ProductSection />
         </section>
-        <section>
-          <ServiceSection />
-        </section>
+       
     </div>
   )
 }
