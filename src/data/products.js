@@ -1,5 +1,5 @@
 import Fruits from "../assets/Fruits.jpg"
-import Vegetable from "../assets/Vegetable.jpg"
+import Vegetable from "../assets/vegetable.jpg"
 import peanut from "../assets/peanut.jpg"
 // import Fruits from "../assets/BlueT"
 import Moringapwder from "../assets/moringapwder.jpg"
